@@ -1,0 +1,29 @@
+{
+  "name": "shitty-electron-app",
+  "version": "1.0.0",
+  "description": "Very advanced app idk",
+  "main": "main.js",
+  "scripts": {
+    "start": "node run.js",
+    "dist": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.ultraslop.constructor",
+    "productName": "Ultraslop Constructor",
+    "icon": "icon.png",
+    "asar": false,
+    "compression": "store",
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false,
+      "verifyUpdateCodeSignature": false
+    }
+  }
+}
